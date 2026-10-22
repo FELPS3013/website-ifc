@@ -1,0 +1,267 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Turret+Road:wght@200;300;400;500;700;800&display=swap');
+
+article{
+	margin-left: 15px;
+	margin-right: 15px;
+}
+body#corpo {
+	background: url("imagens/fundo.jpg");
+}
+header#cabecalho {
+	border-bottom: solid 2px gray;
+}
+footer#rodape {
+	border-top: solid 2px gray;
+	text-align: center;
+}
+hgroup.titulos h1 {
+	text-transform: uppercase;
+	text-decoration: underline;
+	font-size: 30pt;
+}
+hgroup.titulos h2{
+	text-align: left;
+}
+figure.outrasFotos {
+	/*border: solid 3px rgb(0,0,255);*/
+	background-color: lightgray;
+	text-align: center;
+	box-shadow: 0px 0px 20px #000000;
+	border-radius: 80px;
+}
+figure.foto1 {
+	background-color: lightblue;
+	box-shadow: 6px 6px 6px gray;
+	text-align: center;
+	border-radius: 10px;
+	border: solid 8px #000000;
+	width: 25%;
+	padding-top: 5px;
+	float: right;
+	transition: all 1.5s;
+}
+figure.foto1 img {
+	width: 95%;
+	height: 150px;
+}
+figure.foto1 h4 {
+	margin-top: -4px;
+	margin-bottom: 0px;
+	background-color: yellow;
+}
+span.texto {
+	text-align: justify;
+	font-size: 16pt;
+	font-family: chilanka;
+	text-indent: 50px;
+}
+figure.foto1:hover{
+	transform: rotateZ(10deg);
+}
+
+/*FORMATAÇÃO DO MENU PRINCIPAL*/
+
+nav#menu h3{
+	display: none;
+}
+nav#menu ol{
+	list-style: none;
+	text-transform: uppercase;
+	position: absolute;
+	top: 0px;
+	right: 60px;
+}
+nav#menu li{
+	display: inline-block;
+	background-color: lightgray;
+	padding: 10px;
+	margin: 3px;
+	border-radius: 10px;
+	transition: background-color 2s, transform 1s;
+}
+nav#menu a{
+	color: black;
+	text-decoration: none;
+}
+nav#menu li:hover{
+	background-color: darkgray;
+	transform: rotateZ(-15deg);
+}
+nav#menu a:hover{
+	color: white;
+	text-decoration: underline;
+}
+
+/*FORMATAÇÃO DOS TÍTULOS DO ARTICLE*/
+
+article#artigo h1{
+	background-color: #A6D1C4;
+	text-shadow: 2px 2px 2px #FFFC19;
+	font-size: 25pt;
+	text-align: center;
+	transition: all 1s;
+}
+article#artigo h1:hover{
+	letter-spacing: 30px;
+}
+header#cabecalho img.logo{
+	position: absolute;
+	top: 5px;
+	left: 3px;
+}
+header#cabecalho h1{
+	letter-spacing: -20px;
+	color: white;
+	transition: all 1s;
+	text-decoration: none;
+	width: 40%;
+}
+header#cabecalho h1:hover{
+	letter-spacing: 7px;
+	margin-left:3px;
+	background-color: darkblue;	
+	border-radius: 50px;
+	box-shadow: 2px 2px 2px black;
+
+/*FORMATAÇÃO DOS ÍCONES*/
+
+}
+img.icone{
+	position: absolute;
+	top: 70px;
+	right: 80px;
+}
+
+/*FORMATAÇÃO DA TABELA*/
+
+span.frase{
+	font-family: 'Sedgwick ave display', cursive;
+	font-size: 20px;
+	text-indent: 60px;
+}
+caption.titulotabela{
+	background-color: gray;
+	font-size: 30px;
+}
+table.tabela{
+	border-spacing: 0px;
+	text-align: center;
+}
+table.tabela th{
+	border: solid 2px;
+	font-size: 20px;
+}
+table.tabela td{
+	border: solid 2px;
+	font-size: 20px;
+	padding: 10px;
+}
+table.tabela td:hover{
+	border-radius: 20px;
+	background-color: black;
+	color: white;
+	transition: border-radius 2s;
+}
+span.videos{
+	margin-right: 180px;
+	float: right;
+	flex:auto;
+}
+span.videos iframe{
+	border-radius: 30px;
+	height: 280px;
+	width: 490px;
+}
+
+/*FORMATAÇÃO DOS SERVIÇOS*/
+
+div.containerservicos{
+	width: 100%;
+	gap: 20px;
+	display: flex;
+}
+div.videosservicos{
+	flex:auto;
+	color: #3f8f77;
+	font-family: Turret Road, sans-serif;
+	text-align: center;
+}
+div.videosservicos iframe{
+	border-radius: 30px;
+	width: 100%;
+}
+/*FORMATAÇÃO DA LOCALIZAÇÃO*/
+table.tabela2 {
+	text-align: center;
+	font-size: 135%;
+	width: 100%;
+}
+table.tabela2 td{
+	background-color: #a6ced174;
+	padding: 13px;
+	color: #257676;
+	font-family: Turret Road, sans-serif;
+}
+table.tabela2 caption{
+	background-color: #a6d1cb;
+	color: #3f8e8f;
+	font-family: Turret Road, sans-serif;
+}
+h2{
+	text-align: center;
+}
+section.faq summary{
+	background-color: #bbddd4;
+	box-shadow: #3f8f77 2px 2px 2px;
+	padding: 1%;
+	color: #3f8f77;
+	font-family: Turret Road, sans-serif;
+}
+section.faq details{
+	background-color: #dbf1eb;
+	box-shadow: #3f8f77 2px 2px 2px;
+	padding: 1%;
+}
+ul.album li{
+	background:var(--img) center / cover no-repeat;
+	width: 200px;
+	height: 300px;
+	border: #3f8e8f solid 5px;
+	position: relative;
+	text-align: center;
+	font-family: Turret Road, sans-serif;
+	transition: all 1s ease;
+}
+ul.album{
+	display: flex;
+	gap: 40px;
+	max-width: 100%;
+	margin: auto;
+	padding: 50px;
+	list-style: none;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+ul.album li:hover{
+	background-image: var(--img-hover, var(--img));
+	transform: scale(1.3);
+	border-radius: 20px;
+	z-index: 10;
+}
+ul.album li p{
+	opacity: 0;
+	align-items: end;
+	display: flex;
+	color: aliceblue;
+	box-sizing: border-box;
+	height: 100%;
+	justify-content: center;
+	padding: 10px;
+	font-size: 10pt;
+	text-shadow: #3f8e8f 0px 0px 3px;
+}
+ul.album li:hover p{
+	opacity: 1;
+}
